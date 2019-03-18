@@ -1,0 +1,28 @@
+name: dfmt
+version: 0.9.0
+summary: The dfmt is a formatter for D source code
+description: |
+    The dfmt, is a cross platform tool for formatting D source code. 
+    It's used by several text editors and IDE to get IDE-grade features.
+confinement: classic
+grade: stable
+
+apps:
+  dfmt:
+    command: bin/dfmt
+
+parts:
+  dfmt:
+    source: https://github.com/dlang-community/dfmt.git
+    source-tag: v0.9.0
+    source-type: git
+    plugin: make
+    makefile: makefile
+    make-parameters:
+      - DMD=/snap/bin/dmd
+    artifacts:
+      - bin/dfmt
+    build-snaps:
+    - dmd
+    build-packages:
+    - build-essential
