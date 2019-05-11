@@ -1,9 +1,9 @@
 name: dfmt
 version: 0.10.1
-summary: The dfmt is a formatter for D source code
+summary: Code formatter for the D programming language
 description: |
-    The dfmt, is a cross platform tool for formatting D source code. 
-    It's used by several text editors and IDE to get IDE-grade features.
+  Command-line utility to apply fixed code-formatting style to programs
+  written in the D programming language.
 confinement: classic
 grade: stable
 
