@@ -1,5 +1,5 @@
 name: dfmt
-version: 0.10.1
+version: 0.12.0
 summary: Code formatter for the D programming language
 description: |
   Command-line utility to apply fixed code-formatting style to programs
@@ -14,7 +14,7 @@ apps:
 parts:
   dfmt:
     source: https://github.com/dlang-community/dfmt.git
-    source-tag: v0.10.1
+    source-tag: v0.12.0
     source-type: git
     plugin: make
     makefile: makefile
